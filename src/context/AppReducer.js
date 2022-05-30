@@ -8,6 +8,12 @@ export default (state, action) => {
                 ...state, // checks for transaction with id to delete
                 transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
             }
+        case 'ADD_TRANSACTION':
+            return {
+                ...state,
+                // [new transaction, old transaction]
+                transactions: [action.payload, ...state.transactions]
+            }
         default:
             return state;
     }
