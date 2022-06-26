@@ -4,13 +4,12 @@ import Transaction from './Transaction';
 
 const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);
-
+  console.log(transactions)
   return (
     <div>
          <h3>History</h3>
-      <ul className="list">
+     <ul className="list">
         {transactions.map(transaction => ( <Transaction transaction={transaction} key={transaction.id}/>))}
-        
       </ul>
     </div>
   )
