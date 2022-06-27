@@ -151,3 +151,12 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
+.generateReportBtn {
+  background-color: #2B52FF;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
